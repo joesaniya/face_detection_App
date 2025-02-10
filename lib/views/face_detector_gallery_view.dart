@@ -1,3 +1,4 @@
+import 'package:face_detection_app/utils/painter/face_painter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/face_detector_gallery_controller.dart';
@@ -12,7 +13,7 @@ class FaceDetectorGalleryView extends GetView<FaceDetectorGalleryController> {
         body: controller.isLoading.value
             ? const Center(child: CircularProgressIndicator())
             : (controller.iimageFile == null)
-                ?const Center(child: Text('No image selected'))
+                ? const Center(child: Text('No image selected'))
                 : Center(
                     child: FittedBox(
                       child: SizedBox(
@@ -28,7 +29,7 @@ class FaceDetectorGalleryView extends GetView<FaceDetectorGalleryController> {
         floatingActionButton: FloatingActionButton(
           onPressed: controller.getImageAndDetectFaces,
           tooltip: 'Pick Image',
-          child:const Icon(Icons.add_a_photo),
+          child: const Icon(Icons.add_a_photo),
         ),
       );
     });

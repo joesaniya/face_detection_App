@@ -1,4 +1,5 @@
 import 'package:camera/camera.dart';
+import 'package:face_detection_app/views/camera_face_detection_screen.dart';
 import 'package:face_detection_app/views/face_detector_gallery_view.dart';
 import 'package:flutter/material.dart';
 
@@ -30,8 +31,9 @@ class HomeView extends GetView<HomeController> {
                 children: [
                   ElevatedButton(
                       onPressed: () {
-                        controller.initializeCamera();
-                       
+                        // controller.captureAndDetectFace();
+                        // controller.initializeCamera();
+                        Get.to(() => FaceDetectionScreen());
                       },
                       child: const Text("Capture Face")),
                   ElevatedButton(

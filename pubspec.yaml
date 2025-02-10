@@ -41,6 +41,8 @@ dependencies:
   camera: ^0.11.0+2
   image_picker: ^0.8.5+3
   logger: ^1.1.0
+  permission_handler: ^11.3.1
+  # google_ml_vision: ^0.0.8
 
 dev_dependencies:
   flutter_test:

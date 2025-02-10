@@ -85,26 +85,6 @@ class HomeView extends GetView<HomeController> {
                 ),
               ),
             )
-            /*   Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ElevatedButton(
-                      onPressed: () {
-                        // controller.captureAndDetectFace();
-                        // controller.initializeCamera();
-                        Get.to(() => FaceDetectionScreen());
-                      },
-                      child: const Text("Capture Face")),
-                  ElevatedButton(
-                      onPressed: () {
-                        Get.to(() => const FaceDetectorGalleryView());
-                      },
-                      child: const Text("Detect with Gallery")),
-                ],
-              ),
-            )
-        */
           ],
         );
       }),

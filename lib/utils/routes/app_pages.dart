@@ -1,3 +1,5 @@
+import 'package:face_detection_app/bindings/face_detector_camera_binding.dart';
+import 'package:face_detection_app/views/camera_face_detection_screen.dart';
 import 'package:get/get.dart';
 
 import '../../bindings/face_detector_gallery_binding.dart';
@@ -23,5 +25,10 @@ class AppPages {
       page: () => const FaceDetectorGalleryView(),
       binding: FaceDetectorGalleryBinding(),
     ),
+    /* GetPage(
+      name: _Paths.FACE_DETECTOR_GALLERY,
+      page: () => FaceDetectionScreen(),
+      binding: FaceDetectionBinding(),
+    ),*/
   ];
 }
